@@ -1,3 +1,5 @@
+#Cybersecurity-project
+
 LINK: https://github.com/KaislaS/Cybersecurity-project/ 
 
 To use the demo project, download the project files and run the following command: 
@@ -20,7 +22,7 @@ There are 5 cybersecurity flaws in the code, and I have implemented these flaws 
 
  
 
-Flaw 1: Cross-Site Scripting (XSS) 
+##Flaw 1: Cross-Site Scripting (XSS) 
 
 Flaw:  
 
@@ -52,7 +54,7 @@ In the fix, the “| safe” filter was removed to ensure that the question text
 
  
 
-Flaw 2: Sensitive Data Exposure 
+##Flaw 2: Sensitive Data Exposure 
 
  
 
@@ -94,7 +96,7 @@ To fix this I avoided exposing the sensitive information in the response and use
 
  
 
-Flaw 3: Security Misconfiguration  
+##Flaw 3: Security Misconfiguration  
 
  
 
@@ -118,7 +120,7 @@ In my project, I leave debug mode or verbose error messages enabled in productio
 
  
 
-Flaw 4: Cross-Site Request Forgery (CSRF) 
+##Flaw 4: Cross-Site Request Forgery (CSRF) 
 
 Flaw: 
 
@@ -148,7 +150,7 @@ In my project, the {% csrf_token %} tag is missing, and this can result in unaut
 
  
 
-Flaw 5: Broken Authentication  
+##Flaw 5: Broken Authentication  
 
 Flaw: https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L63 
 
