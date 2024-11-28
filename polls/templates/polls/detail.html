@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>index</title>
+  </head>
+  <body>
+    <form action="{% url 'polls:vote' question.id %}" method="post">
+        <!-- FIX, CSRF FLAW: take the {% csrf_token %} out of comment -->
+        <!-- {% csrf_token %} -->
+        <fieldset>
+          <!-- FIX, XSS FLAW: remove safe from {{ question.question_text | safe }} -->
+          <!-- XSS FLAW:-->
+            <legend><h1>{{ question.question_text | safe }}</h1></legend>
+            {% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+            {% for choice in question.choice_set.all %}
+                <input type="radio" name="choice" id="choice{{ forloop.counter }}" value="{{ choice.id }}">
+                <label for="choice{{ forloop.counter }}">{{ choice.choice_text }}</label><br>
+            {% endfor %}
+        </fieldset>
+        <input type="submit" value="Vote">
+    </form>
+  </body>
+</html>
