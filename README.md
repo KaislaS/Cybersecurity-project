@@ -1,4 +1,4 @@
-#Cybersecurity-project
+# Cybersecurity-project
 
 LINK: https://github.com/KaislaS/Cybersecurity-project/ 
 
@@ -22,9 +22,9 @@ There are 5 cybersecurity flaws in the code, and I have implemented these flaws 
 
  
 
-##Flaw 1: Cross-Site Scripting (XSS) 
+## Flaw 1: Cross-Site Scripting (XSS) 
 
-Flaw:  
+### Flaw:  
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/templates/polls/detail.html#L14 
 
@@ -34,7 +34,7 @@ https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/models.py#L10
 
  
 
-Fix:  
+### Fix:  
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/templates/polls/detail.html#L12 
 
@@ -54,11 +54,11 @@ In the fix, the “| safe” filter was removed to ensure that the question text
 
  
 
-##Flaw 2: Sensitive Data Exposure 
+## Flaw 2: Sensitive Data Exposure 
 
  
 
-Flaw: 
+### Flaw: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L78 
 
@@ -68,7 +68,7 @@ https://github.com/KaislaS/Cybersecurity-project/blob/main/mysite/settings.py#L2
 
  
 
-Fix: 
+### Fix: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L85 
 
@@ -96,17 +96,17 @@ To fix this I avoided exposing the sensitive information in the response and use
 
  
 
-##Flaw 3: Security Misconfiguration  
+## Flaw 3: Security Misconfiguration  
 
  
 
-Flaw: 
+### Flaw: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/mysite/settings.py#L33 
 
  
 
-Fix: 
+### Fix: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/mysite/settings.py#L37 
 
@@ -120,9 +120,9 @@ In my project, I leave debug mode or verbose error messages enabled in productio
 
  
 
-##Flaw 4: Cross-Site Request Forgery (CSRF) 
+## Flaw 4: Cross-Site Request Forgery (CSRF) 
 
-Flaw: 
+### Flaw: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L43 
 
@@ -136,7 +136,7 @@ https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/templates/polls
 
  
 
-Fix: 
+### Fix: 
 
 https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L42 
 
@@ -150,11 +150,11 @@ In my project, the {% csrf_token %} tag is missing, and this can result in unaut
 
  
 
-##Flaw 5: Broken Authentication  
+## Flaw 5: Broken Authentication  
 
-Flaw: https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L63 
+### Flaw: https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L63 
 
-Fix: https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L66 
+### Fix: https://github.com/KaislaS/Cybersecurity-project/blob/main/polls/views.py#L66 
 
 Broken authentication happens when an application incorrectly handles user authentication or session management, allowing attackers to bypass authentication or impersonate users. Attackers need access to a few accounts, or just one admin account, to compromise the system, potentially enabling fraud, identity theft, or exposure of sensitive information [5]. 
 
@@ -162,7 +162,7 @@ Broken Authentication flaw in my project is that an attacker can vote multiple t
 
  
 
-References: 
+### References: 
 
 [1]: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS) 
 
