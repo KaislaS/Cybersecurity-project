@@ -164,12 +164,12 @@ Broken Authentication flaw in my project is that an attacker can vote multiple t
 
 ### References: 
 
-[1]: https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS) 
+[1] https://owasp.org/www-project-top-ten/2017/A7_2017-Cross-Site_Scripting_(XSS) 
 
-[2]: https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure 
+[2] https://owasp.org/www-project-top-ten/2017/A3_2017-Sensitive_Data_Exposure 
 
-[3]: https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration 
+[3] https://owasp.org/www-project-top-ten/2017/A6_2017-Security_Misconfiguration 
 
-[4]: https://owasp.org/www-community/attacks/csrf  
+[4] https://owasp.org/www-community/attacks/csrf  
 
-[5]: https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication 
+[5] https://owasp.org/www-project-top-ten/2017/A2_2017-Broken_Authentication 
